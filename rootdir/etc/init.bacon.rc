@@ -19,6 +19,7 @@ import /vendor/etc/init/hw/init.qcom.power.rc
 
 on init
     export LD_PRELOAD /system/lib/libboringssl-compat.so
+    start program_bdaddr
 
 on early-init
     mount debugfs debugfs /sys/kernel/debug
@@ -302,6 +303,12 @@ service wcnss-service /vendor/bin/wcnss_service
     class main
     user system
     group system wifi oem_2950 diag radio
+    oneshot
+
+service program_bdaddr /system/vendor/bin/init.program_bdaddr.sh
+    user bluetooth
+    group bluetooth
+    disabled
     oneshot
 
 on property:apexd.status=ready
