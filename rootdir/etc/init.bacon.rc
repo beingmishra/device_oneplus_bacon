@@ -24,10 +24,6 @@ on early-init
 on init
     export LD_PRELOAD /system/lib/libboringssl-compat.so
 
-    # Set permissions for persist partition
-    mkdir /persist 0771 system system
-    mkdir /firmware 0771 system system
-
     write /proc/sys/vm/page-cluster 0
 
 on early-boot
