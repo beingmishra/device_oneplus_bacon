@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nitrogen_bacon.mk
+    $(LOCAL_DIR)/pixys_bacon.mk
 
 COMMON_LUNCH_CHOICES := \
-    nitrogen_bacon-user \
-    nitrogen_bacon-userdebug \
-    nitrogen_bacon-eng
+    pixys_bacon-user \
+    pixys_bacon-userdebug \
+    pixys_bacon-eng
