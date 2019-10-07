@@ -57,8 +57,8 @@ PRODUCT_COPY_FILES += \
 
 
 PRODUCT_PACKAGES += \
-    android.hardware.audio@2.0-impl \
-    android.hardware.audio.effect@2.0-impl \
+    android.hardware.audio@5.0-impl \
+    android.hardware.audio.effect@5.0-impl \
     audiod \
     audio.a2dp.default \
     audio_policy.msm8974 \
