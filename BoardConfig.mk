@@ -192,3 +192,5 @@ TARGET_USES_INTERACTION_BOOST := true
 DEVICE_MANIFEST_FILE := device/oneplus/bacon/manifest.xml
 
 -include vendor/oneplus/bacon/BoardConfigVendor.mk
+
+TARGET_FLATTEN_APEX := true
