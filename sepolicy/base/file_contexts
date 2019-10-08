@@ -1,3 +1,5 @@
 /firmware(/.*)?     u:object_r:tmp_root_mount_file:s0
 /persist(/.*)?      u:object_r:tmp_root_mount_file:s0
 
+# Recovery
+/cache/recovery/last_install      u:object_r:cache_recovery_last_install:s0

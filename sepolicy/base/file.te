@@ -1,2 +1,5 @@
 type tmp_root_mount_file, file_type;
 
+# cache
+type cache_recovery_last_install ,fs_type;
+
