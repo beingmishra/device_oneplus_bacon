@@ -22,6 +22,8 @@ $(call inherit-product, device/oneplus/bacon/bacon.mk)
 
 # Inherit some common pixys stuff.
 $(call inherit-product, vendor/pixys/config/common_full_phone.mk)
+TARGET_GAPPS_ARCH := arm
+TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_NAME := pixys_bacon
 PRODUCT_DEVICE := bacon
