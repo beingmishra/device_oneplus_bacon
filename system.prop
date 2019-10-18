@@ -94,3 +94,7 @@ wifi.interface=wlan0
 
 # Disable oem unlock
 ro.oem_unlock_supported=false
+
+#system prop for Bluetooth SOC type
+qcom.bluetooth.soc=rome
+
