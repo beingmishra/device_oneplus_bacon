@@ -330,4 +330,4 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, vendor/oneplus/bacon/bacon-vendor.mk)
 
 # Inherit our OneplusShit
-$(call inherit-product, device/oneplus/OneplusShit/opshit.mk)
+#$(call inherit-product, device/oneplus/OneplusShit/opshit.mk)
