@@ -182,10 +182,13 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # SELinux
 #include device/qcom/sepolicy-legacy/sepolicy.mk
-#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
-#BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
 PLATFORM_SEPOLICY_VERSION_TEST := false
+
+#ignore neverallows
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # TWRP
 ifeq ($(WITH_TWRP),true)
